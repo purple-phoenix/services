@@ -1,0 +1,9 @@
+[Unit]
+Description=Starts the jenkins-master instance
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/docker start jenkins-master
+
+[Install]
+WantedBy=default.target
